@@ -56,7 +56,7 @@ Error generating stack: `+i.message+`
   font-size: 2rem;
 
   animation: ${Fh} 1.5s ease-in-out infinite;
-`;function $h({id:o,name:a,age:s,wishlist:p,naughty:g}){return Be.jsxs(Be.Fragment,{children:[Be.jsx("h3",{children:o}),Be.jsxs("h2",{children:["Navn:",a]}),Be.jsxs("p",{children:["Alder:",s]}),Be.jsxs(Mh,{children:["ØnskeList:",p.map(w=>Be.jsx("li",{children:w}))]}),Be.jsx("p",{children:g?"":Be.jsx(Ah,{children:"✨snille"})})]})}const Uh=sn.main`
+`;function $h({id:o,name:a,age:s,wishlist:p,naughty:g}){return Be.jsxs(Be.Fragment,{children:[Be.jsx("h3",{children:o}),Be.jsxs("h2",{children:["Navn:",a]}),Be.jsxs("p",{children:["Alder:",s]}),Be.jsxs(Mh,{children:["ØnskeList:",p.map(w=>Be.jsx("li",{children:w}))]}),Be.jsx("p",{children:g?"":Be.jsx(Ah,{children:"✨snilleBarn"})})]})}const Uh=sn.main`
   padding: 10px;
   text-align: center;
 `,Bh=sn.h1`
@@ -74,7 +74,7 @@ Error generating stack: `+i.message+`
 
   border-radius: 10px;
   gap: 20px;
-  background-image: url(/red2.jpg);
+  background-image: url(./assets/red2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -82,8 +82,8 @@ Error generating stack: `+i.message+`
   padding: 10px;
   /* padding-top: 55px; */
   margin: 20px;
-  color: #f9f9f9;
+  color: #0d0d0d;
   border: 1px solid #f8ef3d;
   border-radius: 8px;
-  background-image: url(/green.jpg);
+  background-image: url(./assets/green.jpg);
 `;function Hh(){const o=[{id:1,name:"Emilie",age:8,wishlist:["Dukkehus","Enhjørningbamse","Fargeleggingsbok","Hoppeball"],naughty:!1},{id:2,name:"Jakob",age:10,wishlist:["Fjernstyrt bil","Lego-sett","Videospill"],naughty:!0},{id:3,name:"Sofie",age:6,wishlist:["Tryllestav","Fe-kostyme","Glitterpenner","Dansesko"],naughty:!1},{id:4,name:"Lars",age:9,wishlist:["Basketball","Drone","Tegneseriebøker","Kikkert","Byggesett"],naughty:!1},{id:5,name:"Mia",age:7,wishlist:["Puslespill","Kunstutstyr","Prinsessekjole"],naughty:!0},{id:6,name:"Noa",age:11,wishlist:["Skateboard","Vitenskapssett","Brettspill","Fotball"],naughty:!0},{id:7,name:"Oda",age:5,wishlist:["Lekekjøkken","Kosedyr","Boblemaskin","Tesett","Leketallerkener"],naughty:!1},{id:8,name:"Adrian",age:8,wishlist:["Fotball","Actionfigurer","Togbane"],naughty:!1},{id:9,name:"Anna",age:6,wishlist:["Tesett","Dukketeater","Glitterklistremerker","Prinsessekrone"],naughty:!1},{id:10,name:"Elias",age:9,wishlist:["Elektrisk sparkesykkel","Rubiks kube","Tegneserieromaner"],naughty:!0},{id:11,name:"Ella",age:7,wishlist:["Prinsesseslott","Kostymer","Lekekjøkken","Perlesett","Interaktiv bok"],naughty:!1},{id:12,name:"Lukas",age:8,wishlist:["Drone","Fjernstyrt båt","Lego-romskip","Skissebok","LED-nattlampe"],naughty:!0},{id:13,name:"Charlotte",age:6,wishlist:["Kosehund","Kunstsett","Glow-stick-armbånd","Mini-piano"],naughty:!1},{id:14,name:"Marius",age:9,wishlist:["Basketballkurv","Robotbyggesett","Fotballsko","Actionkamera","Fjernstyrt lastebil"],naughty:!1},{id:15,name:"Aria",age:5,wishlist:["Fevinger","Glitterlim","Tryllestav","Tesett","Leketlf"],naughty:!1},{id:16,name:"Benjamin",age:10,wishlist:["Fjernstyrt helikopter","Eksperimentsett","VR-briller","Tursekk"],naughty:!0},{id:17,name:"Isabella",age:6,wishlist:["Havfruedukke","Kunststativ","Malesett","Enhjørningsekk","Ballettsko"],naughty:!0},{id:18,name:"Henrik",age:11,wishlist:["Spillkonsoll","Skateboard","Elektrisk gitar","Støydempende hodetelefoner","Tegneseriebokserie","Bygg-din-egen-drone-sett"],naughty:!0},{id:19,name:"Liva",age:5,wishlist:["Boblemaskin","Leketamera","Modell-leire","Koseenhjørning"],naughty:!1},{id:20,name:"Sander",age:9,wishlist:["Sportsdrakt","Basketball","Fjernstyrt bil","Bygg-din-egen katapult-sett","Walkie-talkier"],naughty:!1}];return Be.jsxs(Uh,{children:[Be.jsx(Bh,{children:"JULEØNSKELISTE "}),Be.jsx(Vh,{children:o.map(({id:a,name:s,age:p,wishlist:g,naughty:w})=>Be.jsx(Wh,{children:Be.jsx($h,{id:a,name:s,age:p,wishlist:g,naughty:w})}))})]})}jp.createRoot(document.getElementById("root")).render(Be.jsx(vi.StrictMode,{children:Be.jsx(Hh,{})}));
