@@ -22,7 +22,7 @@ const Grid = styled.div`
 
   border-radius: 10px;
   gap: 20px;
-  background-image: url(/red2.jpg);
+  background-image: url(./assets/red2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,10 +31,10 @@ const Cardinfo = styled.div`
   padding: 10px;
   /* padding-top: 55px; */
   margin: 20px;
-  color: #f9f9f9;
+  color: #0d0d0d;
   border: 1px solid #f8ef3d;
   border-radius: 8px;
-  background-image: url(/green.jpg);
+  background-image: url(./assets/green.jpg);
 `;
 
 function App() {

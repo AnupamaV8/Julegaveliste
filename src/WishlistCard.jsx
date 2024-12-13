@@ -26,10 +26,8 @@ const AnimatedStar = styled.span`
 `;
 
 export default function Card({ id, name, age, wishlist, naughty }) {
-  // const CardToRender = naughty ? CardContainer : AnimatedCard;
   return (
     <>
-      {/* <CardToRender> */}
       <h3>{id}</h3>
       <h2>Navn:{name}</h2>
       <p>Alder:{age}</p>
@@ -41,8 +39,7 @@ export default function Card({ id, name, age, wishlist, naughty }) {
         ))}
       </List>
 
-      <p>{naughty ? "" : <AnimatedStar>✨snille</AnimatedStar>}</p>
-      {/* </CardToRender> */}
+      <p>{naughty ? "" : <AnimatedStar>✨snilleBarn</AnimatedStar>}</p>
     </>
   );
 }
