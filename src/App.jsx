@@ -1,5 +1,7 @@
 import Wishlistcard from "./WishlistCard";
 import styled from "styled-components";
+import green from "./assets/green.jpg";
+
 // import "./App.css";
 
 const Main = styled.main`
@@ -7,34 +9,55 @@ const Main = styled.main`
   text-align: center;
 `;
 const Title = styled.h1`
-  font-size: 1.5em;
-  padding: 40px;
-  color: #f2eb1a;
+  font-size: 3rem;
+  padding: 0px;
+  color: #0a6218;
   text-align: center;
-  text-shadow: 0 0 3px #ff0000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 `;
+const Wrapper = styled.section`
+  padding: 0.1px;
+  background: #ede213;
+`;
+
 const Grid = styled.div`
   display: grid;
   margin: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  border: 1px solid #f8ef3d;
 
   border-radius: 10px;
   gap: 20px;
-  background-image: url(./assets/red2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  /* @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  } */
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 `;
 const Cardinfo = styled.div`
   padding: 10px;
   /* padding-top: 55px; */
   margin: 20px;
-  color: #0d0d0d;
+  color: #faf9f9;
   border: 1px solid #f8ef3d;
   border-radius: 8px;
-  background-image: url(./assets/green.jpg);
+  background-image: url("${green}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
 `;
 
 function App() {
@@ -247,7 +270,9 @@ function App() {
 
   return (
     <Main>
-      <Title>JULEØNSKELISTE </Title>
+      <Wrapper>
+        <Title>JULEØNSKELISTE </Title>
+      </Wrapper>
       <Grid>
         {kidsWishlist.map(({ id, name, age, wishlist, naughty }) => {
           return (

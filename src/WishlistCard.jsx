@@ -6,6 +6,7 @@ const List = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  word-wrap: break-word;
 `;
 const p = styled.p`
   text-decoration: underline;
@@ -20,9 +21,9 @@ const sparkle = keyframes`
 
 const AnimatedStar = styled.span`
   display: inline-block;
-  font-size: 2rem;
-
+  font-size: 1.5rem;
   animation: ${sparkle} 1.5s ease-in-out infinite;
+  word-wrap: break-word;
 `;
 
 export default function Card({ id, name, age, wishlist, naughty }) {
@@ -35,11 +36,11 @@ export default function Card({ id, name, age, wishlist, naughty }) {
       <List>
         ØnskeList:
         {wishlist.map((wish) => (
-          <li>{wish}</li>
+          <li>🎁{wish}</li>
         ))}
       </List>
 
-      <p>{naughty ? "" : <AnimatedStar>✨snilleBarn</AnimatedStar>}</p>
+      <p>{naughty ? "" : <AnimatedStar>✨SnilleBarn</AnimatedStar>}</p>
     </>
   );
 }
