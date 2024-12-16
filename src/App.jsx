@@ -2,8 +2,6 @@ import Wishlistcard from "./WishlistCard";
 import styled from "styled-components";
 import green from "./assets/green.jpg";
 
-// import "./App.css";
-
 const Main = styled.main`
   padding: 10px;
   text-align: center;
@@ -24,17 +22,17 @@ const Wrapper = styled.section`
 const Grid = styled.div`
   display: grid;
   margin: 20px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, auto);
 
   border-radius: 10px;
   gap: 20px;
-  /* @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
-  } */
-
+  }
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+    background-attachment: scroll;
   }
 
   @media (max-width: 500px) {
@@ -43,7 +41,6 @@ const Grid = styled.div`
 `;
 const Cardinfo = styled.div`
   padding: 10px;
-  /* padding-top: 55px; */
   margin: 20px;
   color: #faf9f9;
   border: 1px solid #f8ef3d;

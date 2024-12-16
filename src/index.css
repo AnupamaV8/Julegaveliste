@@ -1,9 +1,9 @@
 body {
   margin: 0;
   place-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-image: url(./assets/kule.jpg);
+  background-image: url(./assets/blue1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
