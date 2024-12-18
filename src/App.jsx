@@ -1,6 +1,5 @@
 import Wishlistcard from "./WishlistCard";
 import styled from "styled-components";
-import green from "./assets/green.jpg";
 
 const Main = styled.main`
   padding: 10px;
@@ -8,15 +7,12 @@ const Main = styled.main`
 `;
 const Title = styled.h1`
   font-size: 3rem;
-  padding: 0px;
-  color: #0a6218;
+  padding-top: 40px;
+  color: yellow;
   text-align: center;
+  font-style: italic;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-`;
-const Wrapper = styled.section`
-  padding: 0.1px;
-  background: #ede213;
 `;
 
 const Grid = styled.div`
@@ -38,23 +34,6 @@ const Grid = styled.div`
   @media (max-width: 500px) {
     grid-template-columns: 1fr;
   }
-`;
-const Cardinfo = styled.div`
-  padding: 10px;
-  margin: 20px;
-  color: #faf9f9;
-  border: 1px solid #f8ef3d;
-  border-radius: 8px;
-  background-image: url("${green}");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  overflow: hidden;
 `;
 
 function App() {
@@ -267,25 +246,11 @@ function App() {
 
   return (
     <Main>
-      <Wrapper>
-        <Title>JULEØNSKELISTE </Title>
-      </Wrapper>
-      <Grid>
-        {kidsWishlist.map(({ id, name, age, wishlist, naughty }) => {
-          return (
-            <Cardinfo>
-              <Wishlistcard
-                id={id}
-                name={name}
-                age={age}
-                wishlist={wishlist}
-                naughty={naughty}
-              />
-            </Cardinfo>
-          );
+      <Title>🎅JULEØNSKELISTE🎅 </Title>
 
-          //anther typpe  {productInfo.map((product) => {
-          //return <ProductCard data = {product} />;
+      <Grid>
+        {kidsWishlist.map((kid) => {
+          return <Wishlistcard key={kid.id} data={kid} />;
         })}
       </Grid>
     </Main>
