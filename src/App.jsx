@@ -11,8 +11,8 @@ const Title = styled.h1`
   color: yellow;
   text-align: center;
   font-style: italic;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
 `;
 
 const Grid = styled.div`
@@ -247,7 +247,6 @@ function App() {
   return (
     <Main>
       <Title>🎅JULEØNSKELISTE🎅 </Title>
-
       <Grid>
         {kidsWishlist.map((kid) => {
           return <Wishlistcard key={kid.id} data={kid} />;

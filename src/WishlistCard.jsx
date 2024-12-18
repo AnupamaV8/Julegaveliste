@@ -11,7 +11,6 @@ const List = styled.ul`
   font-size: 20px;
 `;
 const p = styled.p`
-  text-decoration: underline;
   font-family: "Times New Roman", Times, serif;
 `;
 
@@ -67,8 +66,7 @@ export default function WishlistCard({
         <h3>{id}</h3>
         <Details>{name}</Details>
         <p>{naughty ? "" : <AnimatedStar>✨SnilleBarn</AnimatedStar>}</p>
-        <A>Alder:{age}</A>
-
+        <A>Alder: {age} år</A>
         <List>
           ØnskeList:
           {wishlist.map((wish) => (
