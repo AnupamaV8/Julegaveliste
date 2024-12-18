@@ -47,7 +47,6 @@ Error generating stack: `+i.message+`
   word-wrap: break-word;
   font-size: 20px;
 `;Tt.p`
-  text-decoration: underline;
   font-family: "Times New Roman", Times, serif;
 `;const Ah=jh`
   0% { transform: scale(1); opacity: 0.5; }
@@ -85,7 +84,7 @@ Error generating stack: `+i.message+`
   grid-template-rows: repeat(3, 0.25fr) 0.5fr 2fr;
   max-width: 100%;
   overflow: hidden;
-`;function Wh({data:{id:o,name:a,age:s,wishlist:p,naughty:g}}){return Be.jsx(Be.Fragment,{children:Be.jsxs(Vh,{children:[Be.jsx("h3",{children:o}),Be.jsx(Uh,{children:a}),Be.jsx("p",{children:g?"":Be.jsx($h,{children:"✨SnilleBarn"})}),Be.jsxs(Bh,{children:["Alder:",s]}),Be.jsxs(Fh,{children:["ØnskeList:",p.map(w=>Be.jsxs("li",{children:["🎁",w]}))]})]})})}const Hh=Tt.main`
+`;function Wh({data:{id:o,name:a,age:s,wishlist:p,naughty:g}}){return Be.jsx(Be.Fragment,{children:Be.jsxs(Vh,{children:[Be.jsx("h3",{children:o}),Be.jsx(Uh,{children:a}),Be.jsx("p",{children:g?"":Be.jsx($h,{children:"✨SnilleBarn"})}),Be.jsxs(Bh,{children:["Alder: ",s," år"]}),Be.jsxs(Fh,{children:["ØnskeList:",p.map(w=>Be.jsxs("li",{children:["🎁",w]}))]})]})})}const Hh=Tt.main`
   padding: 10px;
   text-align: center;
 `,Qh=Tt.h1`
@@ -94,8 +93,8 @@ Error generating stack: `+i.message+`
   color: yellow;
   text-align: center;
   font-style: italic;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
 `,Kh=Tt.div`
   display: grid;
   margin: 20px;
